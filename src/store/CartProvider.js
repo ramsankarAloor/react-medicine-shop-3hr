@@ -9,8 +9,6 @@ const CartProvider = (props) => {
     addToCart: addToCart,
   };
 
-  console.log(cartContext);
-
   function addToCart(item) {
     setCart((prevCart) => [...prevCart, item]);
   }

@@ -16,6 +16,9 @@ const MedicineItemForm = (props) => {
 
   function addToCartHandler(e) {
     e.preventDefault();
+    if(props.remaining < amount){
+        return
+    }
     const item = {
       id: props.id,
       amount,

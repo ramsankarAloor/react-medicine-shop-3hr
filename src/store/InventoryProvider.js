@@ -10,8 +10,6 @@ const InventoryProvider = (props) => {
     minusFromInventory
   };
 
-  console.log('inventory', inventory)
-
   function addToInventory(item) {
     setInventory((prevInventory) => {
       return [...prevInventory, item];
