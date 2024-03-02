@@ -1,0 +1,10 @@
+.flex-card{
+    display: flex;
+    width: 90%;
+    margin: 1.5rem auto;
+}
+.sub-div{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
