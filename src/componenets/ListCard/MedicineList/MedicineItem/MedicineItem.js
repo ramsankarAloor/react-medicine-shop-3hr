@@ -10,9 +10,10 @@ const MedicineItem = (props) => {
         </div>
         <div className={styles.description}>{props.description}</div>
         <div className={styles.price}>&#8377;{props.price}</div>
+        <div>Remaining : {props.quantity}</div>
       </div>
       <div>
-        <MedicineItemForm />
+        <MedicineItemForm id={props.id} name={props.name} price={props.price}/>
       </div>
     </li>
   );
