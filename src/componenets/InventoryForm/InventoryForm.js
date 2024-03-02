@@ -26,6 +26,7 @@ const InventoryForm = (props) => {
 
     function addToInvHandler(){
         let item = {
+            id: Math.random(),
             name,
             description,
             price,

@@ -1,5 +1,5 @@
-import Input from '../../UI/Input'
-import styles from './MealItemForm.module.css' 
+import Input from '../../../UI/Input'
+import styles from './MedicineItemForm.module.css' 
 
 const MedicineItemForm=props=>{
     
