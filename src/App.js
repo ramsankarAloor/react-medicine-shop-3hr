@@ -1,12 +1,13 @@
 import InventoryForm from "./componenets/InventoryForm/InventoryForm";
 import ListCard from "./componenets/ListCard/ListCard";
+import InventoryProvider from "./store/InventoryProvider";
 
 function App() {
   return (
-    <div>
+    <InventoryProvider>
       <InventoryForm />
       <ListCard />
-    </div>
+    </InventoryProvider>
   );
 }
 
