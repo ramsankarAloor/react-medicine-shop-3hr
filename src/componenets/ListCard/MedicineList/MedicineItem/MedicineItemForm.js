@@ -22,6 +22,8 @@ const MedicineItemForm = (props) => {
     const item = {
       id: props.id,
       amount,
+      name: props.name,
+      price: props.price
     };
     cartcontext.addToCart(item);
     inventorycontext.minusFromInventory(props.id, amount);
