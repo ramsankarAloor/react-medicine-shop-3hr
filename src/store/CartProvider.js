@@ -7,7 +7,8 @@ const CartProvider = (props) => {
   const cartContext = {
     cart: [...cart],
     addToCart,
-    removeFromCart
+    removeFromCart,
+    clearCart
   };
 
   function addToCart(item) {
@@ -17,6 +18,10 @@ const CartProvider = (props) => {
   function removeFromCart(id){
     let res = cart.filter((item)=> item.id !== id)
     setCart(res)
+  }
+
+  function clearCart(){
+    setCart([])
   }
 
   return (
